@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "speakers")
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Speaker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,7 +27,7 @@ public class Speaker {
     private List<Session> sessions;
 
     public Speaker() {
-        }
+    }
 
     public Long getSpeaker_id() {
         return speaker_id;
