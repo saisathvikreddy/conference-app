@@ -45,5 +45,6 @@ public class SessionsController {
         return sessionRepository.saveAndFlush(existingSession);
 
         //demo of git
+        //extra line
     }
 }
