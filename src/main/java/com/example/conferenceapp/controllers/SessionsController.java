@@ -43,5 +43,7 @@ public class SessionsController {
         Session existingSession = sessionRepository.getOne(id);
         BeanUtils.copyProperties(session, existingSession, "session_id");
         return sessionRepository.saveAndFlush(existingSession);
+
+        //demo of git
     }
 }
